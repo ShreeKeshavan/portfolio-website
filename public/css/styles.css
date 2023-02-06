@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --background : #16161a;
+    --headline : #fffffe;
+    --paragraph : #94a1b2;
+    --highlight : #7f5af0;
+    --text : #fffffe; 
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: var(--background);
+    color: var(--text);
+}
+
+
+.navbar {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__left {
+    display: flex;
+}
+
+.navbar__title {
+    margin: 0 0.4rem;
+}
+
+.nav__social {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav__icon {
+    display: inline-block;
+    margin-left: 0.8rem;
+    font-size: 1.6rem;
+    transition: 0.3s;
+}
+.nav__icon:active {
+    transform: scale(0.8);
+}
+
+.nav__link {
+    color: var(--text);
+}
+
+.icon {
+    color: var(--text);
+    font-size: 1.4rem;
+}
+
+/* container info */
+.container {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__title {
+    font-size: 2.4rem;
+    padding-bottom: 0.4rem;
+}
+
+.container__para {
+    font-size: 1.4rem;
+    padding: 0.6rem 0;
+}
+
+/* skill container */
+.skills {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.skills__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub__skill__title {
+    text-align: center;
+}
+
+.skills__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.4rem;
+    padding: 1.2rem;
+}
+
+.skills__card {
+    padding: 0.6rem;
+}
+
+.sub__skill {
+    padding: 0.8rem;
+}
+
+img {
+    display: block;
+}
+
+
+.wave {
+    animation: animate linear 1s infinite;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* media */
+
+@media only screen and (min-width: 600px) { 
+    .skills__container {
+        flex-direction: row;
+    }
+}
